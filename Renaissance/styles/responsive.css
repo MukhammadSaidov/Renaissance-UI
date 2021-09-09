@@ -1,0 +1,531 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@media screen and  (max-width:560px) {
+    .headerMobile, .headerCenterMobile, .headerFooterMobile, .infoMobile, .comand_mobile, .number_mobile, .portfolio_mobile, .app,  #phone, #phone img, .footerMobi {
+        display: block;
+    }
+
+
+    .header, .content, .design, .wrapper, .screen-footer, #main, .footer, .applications, .phone {
+        display: none;
+    }
+    body {
+        background-color: rgb(26, 24, 24);
+    }
+    .screen {
+        background: url('../images/photos/Прямоугольник\ 493.png') ;
+        background-size: 100% 100% ;
+        background-repeat: no-repeat;
+        width: 100%;
+        height: 100vh;
+    }
+    /* Header */
+    .headerMobile {
+        position: absolute;
+        top: 15px;
+        padding: 10px 20px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        color: #Fff;
+    }
+    .headerMobile .logo a {
+        font-size: 25px;
+        text-transform: uppercase;
+        color: #fff;
+    }
+    .headerMobile .menu {
+        position: absolute;
+        right: -270px;
+        display: flex;
+        align-items: center;
+    }
+    .headerMobile .menu span {
+        color: #fff;
+        padding-right: 15px;
+        font-size: 18px;
+    }
+    .headerMobile .menu span + img {
+        width: 25px;
+        height: 12px;
+    }
+
+    .headerCenterMobile {
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+    }
+    .headerCenterMobile h1 {
+        font-size: 50px;
+        text-transform: uppercase;
+        color: #f0bb6c;
+    }
+    .headerCenterMobile h4 {
+        color: rgb(255, 255, 255);
+        text-transform: uppercase;
+        font-size: 30px;
+        position: absolute;
+        left: 130px;
+        top: 65%;
+        font-weight: 500;
+
+    }
+    .headerFooterMobile {
+        position: relative;
+        padding: 0 15px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        position: absolute;
+        bottom: 30px;
+    }
+    .headerFooterMobile .text {
+        color: #fff;
+    }
+    .headerFooterMobile .text h4 {
+        font-weight: 600;
+    }
+    .headerFooterMobile .telephone_footer {
+        position: absolute;
+        right: -240px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 60px;
+        height: 60px;
+        border-radius: 50%;
+        background-color: #c99a54;
+    }
+    .headerFooterMobile .telephone_footer i {
+        color: #fff;
+        font-size: 25px;
+    }
+
+    /* Info */
+    .infoMobile {
+        position: relative;
+    }
+
+    .infoMobile img {
+        width: 100%;
+        object-fit: cover;
+    }
+    .infoMobile .image {
+        background-color: #ebbb73;
+        color: #000;
+        font-size: 200px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 150px;
+        height: 430px;
+        z-index: -1;
+        opacity: .1;
+    }
+    .infoMobile .info_studio {
+        width: 430px;
+        position: absolute;
+        top: 120px;
+        left: 20px;
+    }
+    .infoMobile .info_studio h4 {
+        color: rgb(180, 177, 177);
+        font-size: 17px;
+    }
+    .infoMobile .info_studio p {
+        color: rgb(180, 177, 177);
+        position: absolute;
+        top: 90px;
+        font-size: 17px;
+    }
+    .infoMobile .info_studio h3 {
+        position: absolute;
+        left: -5px;
+        top: 20px;
+        width: 450px;
+        color: #b88943;
+        margin-bottom: 30px;
+    } 
+
+    /* Comand */ 
+    .comand_mobile {
+        margin-top: 50px;
+        margin-left: 70px;
+        position: relative;
+        width: 400px;
+    }
+    .comand_mobile .comand_title {
+        text-align: center;
+    }
+    .comand_mobile .comand_title h3 {
+        color: #E3A567;
+    }
+    
+    .comand_mobile .comand_text {
+        margin-bottom: 40px;
+        width: 400px;
+        margin-left: 30px;
+        line-height: 22px;
+        color: rgb(180, 177, 177);
+    }
+
+    /* Numbers */
+    .number_mobile {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .number_mobile .item {
+        margin-bottom: 30px;
+        color: rgb(180, 177, 177);
+        width: 380px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .number_mobile .btnjon {
+        position: relative;
+        padding: 15px 30px;
+        text-transform: uppercase;
+        width: 400px;
+        background-color: #ebbb73;
+        border: 1px solid #ebbb73;
+        margin-bottom: 50px;
+        color: #fff;
+    }
+
+    .number_mobile .btnjon::before {
+        position: absolute;
+        content: '';
+        top: -5px;
+        left: 1px;
+        width: 402px;
+        height: 55px;
+        background-color: #ebbb73;
+        z-index: -1;
+        opacity: .3;
+    }
+
+
+    /* Portfolio */
+    .portfolio_mobile {
+        position: relative;
+    }
+    .portfolio_mobile .image {
+        background-color: #ebbb73;
+        color: #000;
+        font-size: 150px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 150px;
+        height: 430px;
+        z-index: -1;
+        opacity: .1;
+    }
+    .portfolio_mobile .infostudio_mobile {
+        width: 430px;
+        position: absolute;
+        top: 140px;
+        left: 20px;
+    }
+    .portfolio_mobile .infostudio_mobile h4 {
+        color: rgb(180, 177, 177);
+    }
+    .portfolio_mobile .infostudio_mobile h3 {
+        position: absolute;
+        top: 20px;
+        left: -5px;
+        color: #b88943;
+        width: 450px;
+    }
+    
+    .itembek{
+        text-align: center;
+        position: relative;
+        top: -170px;
+        height: 233px;
+        background-image: url(/images/photos/slider_bolshevik.png);
+        background-size: cover;
+        width: 100%;
+        background-repeat: no-repeat;
+    }  
+
+    .itembek:nth-child(1){
+        background-image: url(/images/photos/slider_bolshevik-2.png);                     
+    }
+
+    .itembek:nth-child(2){
+        background-image: url(/images/photos/slider_bolshevik-1.png);
+    }
+
+    .itembek:nth-child(3){
+        background-image: url(/images/photos/slide-4.png);
+    }
+
+    .itembek::before{
+        position: absolute; 
+        content: "";
+        height: 233px;
+        width: 100%;
+        background: rgba(0, 0, 0, 0.4);
+        top: 0px; 
+        left: 0px; 
+        right: 0px;
+        z-index: 1;
+    }
+
+    .itembek h3{
+        position: absolute;
+        font-size: 30px;
+        color: #fff;
+        z-index: 2;
+        top: 60px;
+        left: 120px;
+        right: 120px;
+    }
+    .itembek p{ 
+        position: absolute;
+        color: #ccc;
+        font-size: 1.8vh;
+        z-index: 2;
+        top: 120px;
+        left: 12vh;
+        right: 12vh;
+    }
+    .portfolios_img .btnjon {
+        position: relative;
+        top: -150px;
+        margin-left: 80px;
+        padding: 15px 30px;
+        text-transform: uppercase;
+        width: 400px;
+        background-color: transparent;
+        border: 1px solid #ebbb73;
+        color: #ebbb73;
+    }
+
+    .portfolios_img .btnjon::before {
+        position: absolute;
+        content: '';
+        top: -5px;
+        left: 1px;
+        width: 402px;
+        height: 55px;
+        border: 2px solid #ebbb73;
+        z-index: -1;
+        opacity: .3;
+    }
+}
+
+
+/* Form */
+.app {
+    position: relative;
+    background: url('../images/photos/slide-2.png') no-repeat center;
+    background-size: cover;
+    height: 800px;
+    width: 100%;
+    z-index: 1;
+}
+.app::before {
+    position: absolute;
+    content: '';
+    top: 0px;
+    width: 100%;
+    height: 800px;
+    background-color: #000;
+    opacity: 0.5;
+    z-index: -1;
+}
+
+.app-width {
+    padding-top: 150px;
+    position: absolute;
+    left: 50px;
+}
+.app-width .app_title h3 {
+    font-size: 20px;
+    color: #EFB156;
+    text-transform: uppercase;
+}
+
+.app-width .app_title p {
+    color: #fff;
+    padding-top: 24px;
+    font-size: 21px;
+    width: 568px;
+    line-height: 28px;
+}
+
+.app-width .formbek {
+    box-sizing: border-box;
+    width: 700px;
+    padding-top: 50px;
+    display: flex;
+    flex-direction: column;
+    font-size: 18px;
+}
+
+.app-width .formbek input {
+    padding: 15px;
+    width: 450px;
+    height: 70px;
+    border: none;
+    background: transparent;
+    border-bottom: 1px solid #fff;
+    transition: all .5s ease;
+}
+.app-width .formbek input::placeholder{
+    color: #fff;
+}
+
+.app-width .formbek .btn {
+    position: relative;
+    cursor: pointer;
+    width: 450px;
+    background-color: #d18f2b;
+    color: #fff;
+    transition: all .5s ease;
+    font-size: 20px;
+    margin: 20px 0;
+}
+.app-width .formbek .btn::before{
+    position: absolute;
+    content: '';
+    top: -5px;
+    left: -1px;
+    width: 454px;
+    height: 45px;
+    background-color:#d18f2b;
+    border-radius: 5px;
+    z-index: -1;
+    opacity: .5;
+
+}
+
+.app-width .text {
+    font-size: 18px;
+    color: rgb(145, 145, 145);
+}
+
+/* Phone */
+#phone{
+    margin-top: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    height: 1000px;
+}
+
+#phone img {
+    width: 500px;
+    object-fit: cover;
+    height: 1000px;
+    z-index: 0;
+}
+
+/* Footer Mobi */
+.footerMobi {
+    height: 1150px;
+    
+    position: relative;
+    left: 0;
+    right: 0;
+
+}
+.footerMobi .footer_container {
+    position: absolute;
+    background-color: rgb(26, 24, 24);
+    padding-top: 100px;
+    left: 0;
+    right: 0;
+    top: 385px;
+}
+
+.footerMobi .socials h3, .footerMobi .telephones h3, .footerMobi .formjon  h3 {
+    color: rgb(200, 200, 200);
+}
+.footerMobi .socials p {
+    color: rgb(155, 155, 155);
+    margin-bottom: 20px;
+}
+.footerMobi .footer_container .socials, .footerMobi .footer_container .telephones {
+    margin-left: 20px;
+    margin-top: 20px;
+}
+.footerMobi .socials .socials_icons img{
+    padding-right: 20px;
+    margin-bottom: 20px;
+    cursor: pointer;
+}
+.footerMobi .telephones {
+    margin-left: 20px;
+}
+
+.footerMobi .telephones .tel_number .item i {
+    font-size: 17px;
+    color: rgb(145, 144, 144);
+    margin-bottom: 15px;
+}
+.footerMobi .telephones .tel_number .item a {
+    text-decoration: none;
+    margin-left: 10px;
+    color: rgb(155, 155, 155);
+}
+.footerMobi .telephones .socials_title, .footerMobi .formjon .socials_title  {
+    margin-bottom: 25px;
+}
+.footerMobi .formjon {
+    margin: 20px 0 0 20px;
+}
+
+.footerMobi .formjon form {
+    display: flex;
+    flex-direction: column;
+}
+
+.footerMobi .formjon form input {
+    width: 490px;
+    border: none;
+    border-bottom: 2px solid rgb(124, 122, 122);
+    background: transparent;
+    padding: 10px 0;
+    margin-bottom: 15px;
+}
+
+
+.footerMobi .formjon form .btn{
+    position: relative;
+    margin-bottom: 50px;
+    width: 490px;
+    text-transform: uppercase;
+    padding: 20px 15px;
+    border: 1px solid #fff;
+    margin: 20px 0;
+}
+
+.footerMobi .links {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 20px;
+}
+
+.footerMobi .links .icons a img {
+    width: 30px;
+    padding-left: 10px;
+    margin-bottom: 20px;
+}
+.footerMobi .links .copy {
+    color: rgb(236, 236, 236);
+    font-size: 17px;
+    margin-bottom: 30px;
+}
